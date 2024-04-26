@@ -39,13 +39,16 @@ duracion INTEGER NOT NULL,
 tipo VARCHAR (50) NOT NULL,
 id_arbitro INTEGER NOT NULL,
 id_estadio INTEGER NOT NULL,
+id_competicion INTEGER NOT NULL,
 jornada INTEGER NOT NULL,
 fecha DATETIME NOT NULL,
 temporada VARCHAR (50) NOT NULL,
 resultado VARCHAR (50) NOT NULL,
 pais VARCHAR (50) NOT NULL,
   CONSTRAINT Arbitro_PartidoFK FOREIGN KEY (id_Arbitro) REFERENCES Arbitros (id_Arbitro) ON DELETE CASCADE,
-  CONSTRAINT Estadio_PartidoFK FOREIGN KEY (id_Estadio) REFERENCES Estadios (id_Estadio) ON DELETE CASCADE
+  CONSTRAINT Estadio_PartidoFK FOREIGN KEY (id_Estadio) REFERENCES Estadios (id_Estadio) ON DELETE CASCADE,
+  CONSTRAINT Competicion_PartidoFK FOREIGN KEY (id_Competicion) REFERENCES Competiciones (id_Competicion) ON DELETE CASCADE
+
 );
 
 
