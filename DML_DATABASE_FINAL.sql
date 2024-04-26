@@ -76,6 +76,93 @@ INSERT INTO Equipos (id_Equipo, nombre_Equipo, pais_Equipo, ciudad_Equipo, numer
 
 
 
+
+
+INSERT INTO Jugadores (id_Jugador, nombre_Jugador, apellidos_Jugador, nacionalidad, posicion, edad, goles, asistencias, id_Equipo) VALUES
+(1, 'Gerard', 'Piqué', 'Español', 'Defensa', 35, 2, 5, 1),
+(2, 'Sergio', 'Busquets', 'Español', 'Centrocampista', 33, 1, 7, 1),
+(3, 'Jordi', 'Alba', 'Español', 'Defensa', 32, 3, 10, 1),
+(4, 'Marc-André', 'ter Stegen', 'Alemán', 'Portero', 29, 0, 0, 1),
+(5, 'Sergio', 'Ramos', 'Español', 'Defensa', 35, 5, 2, 2),
+(6, 'Toni', 'Kroos', 'Alemán', 'Centrocampista', 32, 2, 10, 2),
+(7, 'Karim', 'Benzema', 'Francés', 'Delantero', 34, 10, 5, 2),
+(8, 'Thibaut', 'Courtois', 'Belga', 'Portero', 29, 0, 0, 2),
+(9, 'Diego', 'Godín', 'Uruguayo', 'Defensa', 35, 1, 0, 3),
+(10, 'Koke', 'Resurrección', 'Español', 'Centrocampista', 29, 3, 8, 3),
+(11, 'Antoine', 'Griezmann', 'Francés', 'Delantero', 30, 7, 5, 3),
+(12, 'Jan', 'Oblak', 'Eslovaco', 'Portero', 29, 0, 0, 3),
+(13, 'Marquinhos', '', 'Brasileño', 'Defensa', 27, 3, 1, 4),
+(14, 'Marco', 'Verratti', 'Italiano', 'Centrocampista', 29, 1, 10, 4),
+(15, 'Neymar', 'Jr.', 'Brasileño', 'Delantero', 29, 15, 10, 4),
+(16, 'Keylor', 'Navas', 'Costarricense', 'Portero', 35, 0, 0, 4),
+(17, 'Dimitri', 'Payet', 'Francés', 'Centrocampista', 34, 5, 10, 5),
+(18, 'Florian', 'Thauvin', 'Francés', 'Delantero', 28, 10, 5, 5),
+(19, 'Steve', 'Mandanda', 'Francés', 'Portero', 36, 0, 0, 5),
+(20, 'Arkadiusz', 'Milik', 'Polaco', 'Delantero', 27, 7, 3, 5),
+(21, 'Manuel', 'Neuer', 'Alemán', 'Portero', 35, 0, 0, 6),
+(22, 'Joshua', 'Kimmich', 'Alemán', 'Centrocampista', 27, 5, 15, 6),
+(23, 'Thomas', 'Müller', 'Alemán', 'Delantero', 32, 10, 10, 6),
+(24, 'Robert', 'Lewandowski', 'Polaco', 'Delantero', 33, 30, 10, 6),
+(25, 'Erling', 'Haaland', 'Noruego', 'Delantero', 21, 30, 5, 7),
+(26, 'Marco', 'Reus', 'Alemán', 'Centrocampista', 32, 7, 7, 7),
+(27, 'Mats', 'Hummels', 'Alemán', 'Defensa', 33, 2, 2, 7),
+(28, 'Jude', 'Bellingham', 'Inglés', 'Centrocampista', 18, 3, 5, 7),
+(29, 'Romelu', 'Lukaku', 'Belga', 'Delantero', 28, 25, 10, 8),
+(30, 'Lautaro', 'Martínez', 'Argentino', 'Delantero', 24, 15, 5, 8),
+(31, 'Nicolo', 'Barella', 'Italiano', 'Centrocampista', 24, 5, 15, 8),
+(32, 'Samir', 'Handanovič', 'Esloveno', 'Portero', 37, 0, 0, 8),
+(33, 'Edin', 'Džeko', 'Bosnio', 'Delantero', 36, 10, 5, 9),
+(34, 'Lorenzo', 'Pellegrini', 'Italiano', 'Centrocampista', 25, 5, 15, 9),
+(35, 'Bryan', 'Cristante', 'Italiano', 'Centrocampista', 26, 3, 10, 9),
+(36, 'Rui', 'Patrício', 'Portugués', 'Portero', 34, 0, 0, 9),
+(37, 'Cristiano', 'Ronaldo', 'Portugués', 'Delantero', 37, 35, 10, 10),
+(38, 'Paulo', 'Dybala', 'Argentino', 'Delantero', 28, 15, 10, 10),
+(39, 'Giorgio', 'Chiellini', 'Italiano', 'Defensa', 37, 2, 0, 10),
+(40, 'Federico', 'Chiesa', 'Italiano', 'Delantero', 24, 10, 5, 10),
+(41, 'Bruno', 'Fernandes', 'Portugués', 'Centrocampista', 27, 15, 20, 11),
+(42, 'Marcus', 'Rashford', 'Inglés', 'Delantero', 24, 20, 10, 11),
+(43, 'David', 'De Gea', 'Español', 'Portero', 31, 0, 0, 11),
+(44, 'Harry', 'Maguire', 'Inglés', 'Defensa', 28, 2, 0, 11),
+(45, 'Kevin', 'De Bruyne', 'Belga', 'Centrocampista', 30, 10, 25, 12),
+(46, 'Raheem', 'Sterling', 'Inglés', 'Delantero', 27, 15, 10, 12),
+(47, 'Ederson', 'Moraes', 'Brasileño', 'Portero', 28, 0, 0, 12),
+(48, 'Ruben', 'Dias', 'Portugués', 'Defensa', 24, 2, 0, 12),
+(49, 'Mohamed', 'Salah', 'Egipcio', 'Delantero', 30, 25, 20, 13),
+(50, 'Sadio', 'Mané', 'Senegalés', 'Delantero', 29, 20, 15, 13),
+(51, 'Virgil', 'van Dijk', 'Neerlandés', 'Defensa', 30, 3, 0, 13),
+(52, 'Alisson', 'Becker', 'Brasileño', 'Portero', 29, 0, 0, 13),
+(53, 'Kai', 'Havertz', 'Alemán', 'Centrocampista', 22, 10, 5, 14),
+(54, 'Mason', 'Mount', 'Inglés', 'Centrocampista', 23, 10, 10, 14),
+(55, 'Edouard', 'Mendy', 'Senegalés', 'Portero', 29, 0, 0, 14),
+(56, 'Thiago', 'Silva', 'Brasileño', 'Defensa', 37, 1, 1, 14),
+(57, 'Pierre-Emerick', 'Aubameyang', 'Gabonés', 'Delantero', 32, 20, 5, 15),
+(58, 'Bukayo', 'Saka', 'Inglés', 'Centrocampista', 20, 5, 15, 15),
+(59, 'Bernd', 'Leno', 'Alemán', 'Portero', 29, 0, 0, 15),
+(60, 'Kieran', 'Tierney', 'Escocés', 'Defensa', 24, 2, 5, 15),
+(61, 'Darwin', 'Núñez', 'Uruguayo', 'Delantero', 22, 15, 5, 16),
+(62, 'Rafa', 'Silva', 'Portugués', 'Centrocampista', 28, 10, 10, 16),
+(63, 'Odisseas', 'Vlachodimos', 'Griego', 'Portero', 27, 0, 0, 16),
+(64, 'Jan', 'Vertonghen', 'Belga', 'Defensa', 34, 1, 1, 16),
+(65, 'Moussa', 'Marega', 'Maliense', 'Delantero', 30, 10, 5, 17),
+(66, 'Otávio', 'Edmilson', 'Brasileño', 'Centrocampista', 27, 5, 15, 17),
+(67, 'Agustín', 'Marchesín', 'Argentino', 'Portero', 33, 0, 0, 17),
+(68, 'Pepe', '', 'Portugués', 'Defensa', 39, 2, 0, 17),
+(69, 'Sead', 'Kolašinac', 'Bosnio', 'Defensa', 28, 1, 1, 18),
+(70, 'Amine', 'Harit', 'Marroquí', 'Centrocampista', 24, 3, 7, 18),
+(71, 'Martin', 'Ødegaard', 'Noruego', 'Centrocampista', 23, 5, 10, 18),
+(72, 'Ralf', 'Fährmann', 'Alemán', 'Portero', 33, 0, 0, 18),
+(73, 'Lorenzo', 'Insigne', 'Italiano', 'Delantero', 30, 15, 10, 19),
+(74, 'Kalidou', 'Koulibaly', 'Senegalés', 'Defensa', 30, 2, 0, 19),
+(75, 'Piotr', 'Zielinski', 'Polaco', 'Centrocampista', 27, 5, 10, 19),
+(76, 'Alex', 'Meret', 'Italiano', 'Portero', 24, 0, 0, 19),
+(77, 'Dusan', 'Vlahovic', 'Serbio', 'Delantero', 21, 20, 5, 20),
+(78, 'Nikola', 'Milinkovic', 'Serbio', 'Centrocampista', 24, 5, 10, 20),
+(79, 'Bartlomiej', 'Dragowski', 'Polaco', 'Portero', 24, 0, 0, 20),
+(80, 'German', 'Pezzella', 'Argentino', 'Defensa', 30, 2, 0, 20);
+
+
+
+
 INSERT INTO Partidos (id_Partido, duracion, tipo, id_arbitro, id_estadio,id_competicion, jornada, fecha, temporada, resultado, pais) VALUES
 (1, 90, 'Liga', 1, 1,1, 15, '2024-04-20 18:00:00', '2023/2024', '2-1', 'España'),
 (2, 90, 'Liga', 3, 2,2, 17, '2024-04-21 15:30:00', '2023/2024', '3-0', 'España'),
@@ -167,3 +254,19 @@ INSERT INTO Equipos_Partidos (id_Equipo, id_Equipo2, id_Partido) VALUES
 (4, 6, 29), -- Paris Saint-Germain vs Bayern Munich
 -- Partido 30
 (7, 10, 30); -- Borussia Dortmund vs Juventus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
