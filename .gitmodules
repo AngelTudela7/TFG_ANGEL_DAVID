@@ -1,6 +1,3 @@
 [submodule "TFG_ANGEL_DAVID"]
 	path = TFG_ANGEL_DAVID
 	url = https://github.com/AngelTudela7/TFG_ANGEL_DAVID.git
-[submodule "Proyecto_Laravel/ligas"]
-	path = Proyecto_Laravel/ligas
-	url = https://github.com/AngelTudela7/TFG_ANGEL_DAVID.git
