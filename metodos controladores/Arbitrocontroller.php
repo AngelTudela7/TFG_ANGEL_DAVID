@@ -31,7 +31,7 @@ class ArbitroController extends Controller
                 $arbitro->nacionalidad = $datos->nacionalidad;
                 $arbitro->asignacion = $datos->asignacion;
                 $arbitro->save();
-                //echo "Alta nuevo arbitro";
+                
             return back()->with('mensaje', 'Arbitro dada de alta');
         }
 
