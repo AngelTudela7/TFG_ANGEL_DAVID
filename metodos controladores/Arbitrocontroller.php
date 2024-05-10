@@ -17,6 +17,23 @@ class ArbitroController extends Controller
             $parts = $arbt->partidos;
             return view('verArbitro', compact('arbt','parts'));
         }
+        public function crearArbitro(Request $datos){
+            $datos-> validate([
+                'nombre_Arbitro' => 'required|max:255|min:5',
+                'apellidos_Arbitro' => 'required|max:50|min:3',
+                'nacionalidad' => 'required|max:50|min:3',
+                'asignacion' => 'required|max:50|min:3'
+            ]);
+            
+                $arbitro = new Arbitro;
+                $arbitro->nombre_Arbitro= $datos->nombre_Arbitro;
+                $arbitro->apellidos_Arbitro = $datos->apellidos_Arbitro;
+                $arbitro->nacionalidad = $datos->nacionalidad;
+                $arbitro->asignacion = $datos->asignacion;
+                $arbitro->save();
+                //echo "Alta nuevo arbitro";
+            return back()->with('mensaje', 'Arbitro dada de alta');
+        }
 
         public function editarArbitro($id) {
             $arbitro = Arbitro::find($id);
