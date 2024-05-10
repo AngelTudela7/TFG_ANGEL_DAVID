@@ -1,6 +1,6 @@
 
 
-INSERT INTO estadios (id_Estadio, nombre_Estadio, pais, ciudad, aforo) VALUES
+INSERT INTO estadios (id, nombre_Estadio, pais, ciudad, aforo) VALUES
 (1, 'Camp Nou', 'España', 'Barcelona', 99354),
 (2, 'Santiago Bernabéu', 'España', 'Madrid', 81044),
 (3, 'Wanda Metropolitano', 'España', 'Madrid', 68456),
@@ -23,7 +23,7 @@ INSERT INTO estadios (id_Estadio, nombre_Estadio, pais, ciudad, aforo) VALUES
 (20, 'Stade de France', 'Francia', 'Saint-Denis', 81338);
 
 
-INSERT INTO arbitros (id_Arbitro, nombre_Arbitro, apellidos_Arbitro, nacionalidad, asignacion) VALUES
+INSERT INTO arbitros (id, nombre_Arbitro, apellidos_Arbitro, nacionalidad, asignacion) VALUES
 (1, 'Mateu', 'Lahoz', 'Español', 'La Liga'),
 (2, 'Felix', 'Brych', 'Alemán', 'Bundesliga'),
 (3, 'Gianluca', 'Rocchi', 'Italiano', 'Serie A'),
@@ -41,7 +41,7 @@ INSERT INTO arbitros (id_Arbitro, nombre_Arbitro, apellidos_Arbitro, nacionalida
 (15, 'Martin', 'Atkinson', 'Inglés', 'Premier League');
 
 
-INSERT INTO competiciones (id_Competicion,nombre_Competicion, numero_Jornadas, numero_Equipos, pais_Competicion) VALUES
+INSERT INTO competiciones (id,nombre_Competicion, numero_Jornadas, numero_Equipos, pais_Competicion) VALUES
 (1,'LaLiga', 38, 20, 'España'),
 (2,'Premier League', 38, 20, 'Inglaterra'),
 (3,'Serie A', 38, 20, 'Italia'),
@@ -51,7 +51,7 @@ INSERT INTO competiciones (id_Competicion,nombre_Competicion, numero_Jornadas, n
 
 
 
-INSERT INTO equipos (id_Equipo, nombre_Equipo, pais_Equipo, ciudad_Equipo, numero_plantilla, abreviacion, id_Competicion, id_Estadio) VALUES
+INSERT INTO equipos (id, nombre_Equipo, pais_Equipo, ciudad_Equipo, numero_plantilla, abreviacion, competicion_id, id_Estadio) VALUES
 (1, 'FC Barcelona', 'España', 'Barcelona', 25, 'FCB', 1, 1),
 (2, 'Real Madrid', 'España', 'Madrid', 25, 'RMA', 1, 2),
 (3, 'Atlético de Madrid', 'España', 'Madrid', 25, 'ATM', 1, 3),
@@ -78,7 +78,7 @@ INSERT INTO equipos (id_Equipo, nombre_Equipo, pais_Equipo, ciudad_Equipo, numer
 
 
 
-INSERT INTO jugadores (id_Jugador, nombre_Jugador, apellidos_Jugador, nacionalidad, posicion, edad, goles, asistencias, id_Equipo) VALUES
+INSERT INTO jugadores (id, nombre_Jugador, apellidos_Jugador, nacionalidad, posicion, edad, goles, asistencias, equipo_id) VALUES
 (1, 'Gerard', 'Piqué', 'Español', 'Defensa', 35, 2, 5, 1),
 (2, 'Sergio', 'Busquets', 'Español', 'Centrocampista', 33, 1, 7, 1),
 (3, 'Jordi', 'Alba', 'Español', 'Defensa', 32, 3, 10, 1),
@@ -163,7 +163,7 @@ INSERT INTO jugadores (id_Jugador, nombre_Jugador, apellidos_Jugador, nacionalid
 
 
 
-INSERT INTO partidos (id_Partido, duracion, tipo, id_arbitro, id_estadio,id_competicion, jornada, fecha, temporada, resultado, pais) VALUES
+INSERT INTO partidos (id, duracion, tipo, arbitro_id, estadio_id,competicion_id, jornada, fecha, temporada, resultado, pais) VALUES
 (1, 90, 'Liga', 1, 1,1, 15, '2024-04-20 18:00:00', '2023/2024', '2-1', 'España'),
 (2, 90, 'Liga', 3, 2,2, 17, '2024-04-21 15:30:00', '2023/2024', '3-0', 'España'),
 (3, 90, 'Liga', 5, 3,5, 19, '2024-04-22 20:00:00', '2023/2024', '1-1', 'Francia'),
@@ -197,7 +197,7 @@ INSERT INTO partidos (id_Partido, duracion, tipo, id_arbitro, id_estadio,id_comp
 
 
 
-INSERT INTO equipos_partidos (id_Equipo, id_Equipo2, id_Partido) VALUES
+INSERT INTO equipos_partidos (equipo1_id, equipo2_id, partido_id) VALUES
 (1, 2, 1),   
 (6, 7, 3), -- Bayern Munich vs Borussia Dortmund
 -- Partido 4
