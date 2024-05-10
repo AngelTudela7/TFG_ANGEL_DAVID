@@ -92,42 +92,42 @@ input[type="submit"]:hover {
 <form action="{{ route('crearArbitro') }}" method="POST">
     @csrf
     <fieldset style="width:40%;">
-    <legend>Nueva Arbitro</legend>
-    Nombre: <input type="text" name="nombre_Arbitro"><br><br>
-    @error('nombre_Arbitro')
-    <div style='color:red;'>
-    {{ $message }}
-    </div>
-    @enderror
-    <br>
-    Apellidos: <input type="text" name="apellidos_Arbitro" ><br><br>
-    @error('apellidos_Arbitro')
-    <div style='color:red;'>
-    {{ $message }}
-    </div>
-    @enderror
-    <br>
-    Nacionalidad: <input type="text" name="nacionalidad"><br><br>
-    @error('nacionalidad')
-    <div style='color:red;'>
-    {{ $message }}
-    </div>
-    @enderror
-    <br>
-    Asignacion: <input type="text" name="asignacion" ><br><br>
-    @error('asignacion')
-    <div style='color:red;'>
-    {{ $message }}
-    </div>
-    @enderror
-    <br>
-    <input type="submit" name='Insertar' value='Crear Arbitro'>
-    </fieldset>
+        <legend>Nueva Arbitro</legend>
+            Nombre: <input type="text" name="nombre_Arbitro"><br><br>
+                @error('nombre_Arbitro')
+                    <div style='color:red;'>
+                        {{ $message }}
+                    </div>
+                @enderror
+        <br>
+            Apellidos: <input type="text" name="apellidos_Arbitro" ><br><br>
+                @error('apellidos_Arbitro')
+                    <div style='color:red;'>
+                        {{ $message }}
+                    </div>
+                @enderror
+        <br>
+            Nacionalidad: <input type="text" name="nacionalidad"><br><br>
+                @error('nacionalidad')
+                    <div style='color:red;'>
+                        {{ $message }}
+                    </div>
+                @enderror
+        <br>
+            Asignacion: <input type="text" name="asignacion" ><br><br>
+                @error('asignacion')
+                    <div style='color:red;'>
+                        {{ $message }}
+                    </div>
+                @enderror
+        <br>
+            <input type="submit" name='Insertar' value='Crear Arbitro'>
+        </fieldset>
     </form>
-    @if (session('mensaje'))
-    <div style='background-color:moccasin;'>
-    {{ session('mensaje') }}
-    </div>
-    @endif
-    </body>
+        @if (session('mensaje'))
+            <div style='background-color:moccasin;'>
+                {{ session('mensaje') }}
+            </div>
+        @endif
+        </body>
     </html>
