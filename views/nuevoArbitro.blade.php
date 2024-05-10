@@ -83,6 +83,28 @@ input[type="submit"]:hover {
         width: 90%;
     }
 }
+    a.back-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.back-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #337ab7; /* Cambia el color de fondo según tus preferencias */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a.back-button button:hover {
+    background-color: #23527c; /* Cambia el color de fondo al pasar el mouse */
+}
+
 
 </style>
 </head>
@@ -129,5 +151,6 @@ input[type="submit"]:hover {
                 {{ session('mensaje') }}
             </div>
         @endif
+    <a href="{{ route('mostrarArbitros') }}" class="back-button"><button>Volver</button></a><br>
         </body>
     </html>
