@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('mostrarArbitros',[ArbitroController::class,'mostrarArbitros'])->name('mostrarArbitros');
 Route::get('verArbitro/{id}',[ArbitroController::class,'verArbitro'])->name('verArbitro');
+Route::view('nuevoArbitro', 'nuevoArbitro')->name('nuevoArbitro');
+Route::post('crearArbitro',[ArbitroController::class,'crearArbitro'])->name('crearArbitro');
 Route::get('editarArbitro/{id}', [ArbitroController::class,'editarArbitro'])->name('editarArbitro');
 Route::put('actualizarArbitro/{id}',[ArbitroController::class,'actualizarArbitro'])->name('actualizarArbitro');
 Route::delete('eliminarArbitro/{id}',[ArbitroController::class,'eliminarArbitro'])->name('eliminarArbitro');
