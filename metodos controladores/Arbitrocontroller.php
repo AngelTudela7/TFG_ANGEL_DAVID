@@ -66,7 +66,7 @@ class ArbitroController extends Controller
                     return back()->with('mensaje', 'Arbitro Eliminado');
                     }
                     else {
-                    return back()->with('mensaje', 'No existe el arbitrp');
+                    return back()->with('mensaje', 'No existe el arbitro');
                     }
                    
                     }

@@ -80,7 +80,7 @@ edad INTEGER NOT NULL,
 goles INTEGER ,
 asistencias INTEGER ,
 equipo_id INTEGER NOT NULL,
-CONSTRAINT Jugador_EquipoFK FOREIGN KEY (equipo_id) REFERENCES Equipos (id ON DELETE CASCADE)
+CONSTRAINT Jugador_EquipoFK FOREIGN KEY (equipo_id) REFERENCES Equipos (id) ON DELETE CASCADE
 );
 
 
